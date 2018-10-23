@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin: 0;
+      padding: 0 10px 0 10px;
+
+      font-family: sans-serif;
+      color: #3e3e3e;
+
+      width: 100%;
+    }
+
+    .wrapper {
+      width: 80%;
+    }
+
+    .chat {
+      width: 100%;
+      border: 3px solid #3e3e3e;
+      padding: 10px;
+    }
+
+    .bubble {
+      width: 80%;
+      background: royalblue;
+      padding: 10px 25px;
+      border-radius: 30px;
+      overflow: hidden;
+
+      margin: 10px 0 10px 0;
+    }
+
+    .bubble span {
+      color: #f0f0f0;
+      font-size: 1.25em;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <h1>Staff</h1>
+    <div class="chat chat_staff">
+    </div>
+
+    <h1>User</h1>
+    <div class="chat chat_user">
+
+    </div>
+  </div>
+
+</body>
+<script src="./socket.io.js"></script>
+<script src="./script.js"></script>
+</html>
